@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "banana",
+  "version": "${version}",
+
+  "name": "Banana Mod",
+  "description": "This is a banana mod",
+  "authors": [
+    "maccam1234", "ienderdestoryeri"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/banana/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.maccam1234.banana.BananaMod"
+    ]
+  },
+  "mixins": [
+
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "1.14.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
