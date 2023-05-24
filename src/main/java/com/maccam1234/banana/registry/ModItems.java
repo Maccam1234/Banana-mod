@@ -13,7 +13,7 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     //banana item has settings food(can be eaten), rarity(pink item name), group(shows up in the food group tab in creative)
-    public static final Item BANANA = new Item(new Item.Settings().group(ItemGroup.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(5).saturationModifier(6f).build()));
+    public static final Item BANANA = new Item(new Item.Settings().group(ItemGroup.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(20).saturationModifier(20f).statusEffect(new statusEffectInstance(StatusEffects.ABSORPTION, 20*120), 1f).build()));
 
     //minecraft item id (modid:itemName)
     //the purpose of this method is to register all items at once
