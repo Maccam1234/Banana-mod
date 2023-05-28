@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item BANANA = new Item(new Item.Settings().group(ItemGroup.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(20).saturationModifier(20f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*120, 255), 1f).build()));
     
     //sword item parameters (tool material, additional attack damage, attack speed, settings)
-    public static final Item BANANA_SWORD = new SwordItem(ToolMaterials.NETHERITE, 100, 5f, new Item.Settings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC));
+    public static final Item BANANA_SWORD = new SwordItem(ToolMaterials.NETHERITE, 195, 11f, new Item.Settings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC));
 
     //minecraft item id (modid:itemName)
     //the purpose of this method is to register all items at once
