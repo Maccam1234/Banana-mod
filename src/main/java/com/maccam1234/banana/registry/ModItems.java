@@ -7,6 +7,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
@@ -16,10 +18,14 @@ public class ModItems {
 
     //banana item has settings food(can be eaten), rarity(pink item name), group(shows up in the food group tab in creative)
     public static final Item BANANA = new Item(new Item.Settings().group(ItemGroup.FOOD).rarity(Rarity.EPIC).food(new FoodComponent.Builder().hunger(20).saturationModifier(20f).statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 20*120, 255), 1f).build()));
+    
+    //sword item parameters (tool material, additional attack damage, attack speed, settings)
+    public static final Item BANANA_SWORD = new SwordItem(ToolMaterials.NETHERITE, 100, 5f, new Item.Settings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC));
 
     //minecraft item id (modid:itemName)
     //the purpose of this method is to register all items at once
     public static void registerItems(){
         Registry.register(Registry.ITEM, new Identifier(BananaMod.MOD_ID, "banana"), BANANA);
+        Registry.register(Registry.ITEM, new Identifier(BananaMod.MOD_ID, "banana_sword"), BANANA_SWORD);
     }
 }
